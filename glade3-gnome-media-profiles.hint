@@ -1,0 +1,9 @@
+category: Devel Gnome
+requires: libgnome-media-profiles0
+external-source: libgnome-media-profiles
+sdesc: "GNOME media profiles library (Glade3 plugin)"
+ldesc: "This package contains a suite of GNOME media tools:
+  - GNOME GStreamer-based audio mixer.
+  - GNOME Sound Recorder.
+  - GStreamer Properties Capplet.
+  - Audio Profile library."

@@ -1,0 +1,18 @@
+ORIG_PN="gnome-media"
+inherit gnome2
+
+DESCRIPTION="GNOME GStreamer media tools suite"
+
+PATCH_URI="2.30.0-glade3-as-needed.patch
+           2.32.0-library-only.patch"
+
+PKG_NAMES="libgnome-media-profiles0 libgnome-media-profiles-devel glade3-gnome-media-profiles"
+libgnome_media_profiles0_CONTENTS="--exclude=glade3 etc/ usr/bin/*-0.dll usr/share/"
+libgnome_media_profiles_devel_CONTENTS="usr/include/ usr/lib/libgnome-* usr/lib/pkgconfig/"
+glade3_gnome_media_profiles_CONTENTS="usr/*/glade3/"
+
+DIFF_EXCLUDES="gnome-media-profiles.pc"
+
+# we only want the gtk2 libgnome-media-profiles for rhythmbox; the programs
+# all have newer gtk3 versions in gnome-media-2.91 and gnome-control-center-3.x
+CYGCONF_ARGS="--disable-grecord --disable-gstprops --disable-gstmix --disable-pulseaudio"

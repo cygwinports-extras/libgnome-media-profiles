@@ -1,0 +1,8 @@
+category: Gnome Audio Video
+requires:
+sdesc: "GNOME media profiles library (sources)"
+ldesc: "This package contains a suite of GNOME media tools:
+  - GNOME GStreamer-based audio mixer.
+  - GNOME Sound Recorder.
+  - GStreamer Properties Capplet.
+  - Audio Profile library."

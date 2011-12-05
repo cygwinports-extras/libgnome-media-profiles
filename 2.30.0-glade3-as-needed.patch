@@ -1,0 +1,8 @@
+--- origsrc/gnome-media-2.30.0/profiles/glade/gnome-media-profiles-catalog.c	2010-02-22 16:20:26.000000000 -0600
++++ src/gnome-media-2.30.0/profiles/glade/gnome-media-profiles-catalog.c	2010-06-16 21:32:26.480437900 -0500
+@@ -5,4 +5,5 @@ void gnome_media_profiles_catalog_init (
+ void
+ gnome_media_profiles_catalog_init (void) {
+   /* empty init function,to make sure the catalg is initialized */
++  gm_audio_profile_edit_get_type();
+ }

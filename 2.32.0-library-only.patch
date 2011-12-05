@@ -1,0 +1,31 @@
+--- origsrc/gnome-media-2.32.0/Makefile.am	2010-08-04 08:09:51.000000000 -0500
++++ src/gnome-media-2.32.0/Makefile.am	2011-11-25 03:11:59.981205600 -0600
+@@ -10,10 +10,6 @@ if HAVE_GRECORD
+ SUBDIRS += grecord
+ endif
+ 
+-if HAVE_SOUND_THEME
+-SUBDIRS += sound-theme
+-endif
+-
+ if HAVE_PULSEAUDIO
+ SUBDIRS += gnome-volume-control
+ endif
+--- origsrc/gnome-media-2.32.0/profiles/Makefile.am	2010-09-28 09:46:17.000000000 -0500
++++ src/gnome-media-2.32.0/profiles/Makefile.am	2011-11-25 03:30:46.414100400 -0600
+@@ -1,5 +1,4 @@
+-bin_PROGRAMS = gnome-audio-profiles-properties
+-noinst_PROGRAMS =
++noinst_PROGRAMS = gnome-audio-profiles-properties
+ 
+ defines = \
+ 	-DG_LOG_DOMAIN=\"gnome-media-profiles\" \
+@@ -72,7 +71,7 @@ EXTRA_DIST = $(ui_DATA) $(schema_DATA) $
+ CLEANFILES = $(schema_DATA)
+ 
+ # "." is dirty hack to first build our .la in this dir before moving to glade
+-SUBDIRS =  . help
++SUBDIRS =  .
+ 
+ if HAVE_GLADEUI
+ SUBDIRS += glade

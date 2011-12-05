@@ -1,0 +1,9 @@
+category: Gnome Audio Video
+requires: GConf2 libgconf2_4 libglib2.0_0 libgstreamer0.10_0 libgtk2.0_0 libintl8
+external-source: libgnome-media-profiles
+sdesc: "GNOME media profiles library (runtime)"
+ldesc: "This package contains a suite of GNOME media tools:
+  - GNOME GStreamer-based audio mixer.
+  - GNOME Sound Recorder.
+  - GStreamer Properties Capplet.
+  - Audio Profile library."
